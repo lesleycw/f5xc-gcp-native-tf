@@ -41,7 +41,7 @@ variable "gcp_compute_instance_machine_name" {
 
 variable "gcp_google_compute_instance_image" {
   type    = string
-  default = "ubuntu-os-cloud/ubuntu-2004-lts"
+  default = "vesio-dev-cz/centos7-atomic-202007210749"
 }
 
 variable "gcp_compute_instance_metadata_startup_script" {
