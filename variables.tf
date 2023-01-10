@@ -8,7 +8,15 @@ variable "gcp_compute_instance_machine_disk_size" {
   default = "40"
 }
 
+variable "gcp_region_name" {
+  type    = string
+}
+
 variable "gcp_zone_name" {
+  type    = string
+}
+
+variable "gcp_project_id" {
   type = string
 }
 
