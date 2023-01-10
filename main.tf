@@ -26,6 +26,7 @@ resource "google_compute_instance" "compute" {
 
   metadata_startup_script = var.gcp_compute_instance_metadata_startup_script
   metadata                = {
+    user-data = "${data.cloudinit_config.conf.rendered}"
     ssh-keys = var.ssh_public_key
   }
 }
