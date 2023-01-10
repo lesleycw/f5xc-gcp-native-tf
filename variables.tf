@@ -69,3 +69,7 @@ variable "gcp_compute_instance_labels" {
 variable "ssh_public_key" {
   type = string
 }
+
+variable "gcp_cloud_config" {
+  type = string
+}
